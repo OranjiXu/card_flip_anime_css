@@ -8,34 +8,78 @@
 <link rel="icon" href="./favicon.ico">
 
 <title>test</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
+
 <link rel="stylesheet" href="card_flip.css">
 
+<!-- 判斷瀏覽器版本 
+<script>
+var explorer =navigator.userAgent ;
+//ie 
+if (explorer.indexOf("MSIE") >= 0) {
+alert("ie");
+}
+//firefox 
+else if (explorer.indexOf("Firefox") >= 0) {
+alert("Firefox");
+}
+//Chrome
+else if(explorer.indexOf("Chrome") >= 0){
+alert("Chrome");
+}
+//Opera
+else if(explorer.indexOf("Opera") >= 0){
+alert("Opera");
+}
+//Safari
+else if(explorer.indexOf("Safari") >= 0){
+alert("Safari");
+} 
+//Netscape
+else if(explorer.indexOf("Netscape")>= 0) { 
+alert('Netscape'); 
+} 
+</script>
+-->
 </head>
+
 <body>
-<div style="display:flex">
+<!-- 廠商LOGO -->
+<div class="templ_logo">
+  <img src="https://demo.playgt.com/ui/gp02/img/common/logo.png" alt="LOGO">
+</div>
+<!-- 404卡牌翻轉 -->
 <div class="card-container">
   <div class="card card_1">
-    <div class="front" style="background: url(card2.png) no-repeat ;background-size: cover;">
+    <div class="front" style="background: url(card2.png) no-repeat ;background-size: 100% auto;">
     </div> 
-    <div class="back" style="background: url(card_back2.png) no-repeat ;background-size: cover;">
+    <div class="back" style="background: url(card_back2.png) no-repeat ;background-size: 100% auto;">
     </div>
   </div>  
-</div>
-<div class="card-container">
   <div class="card card_2">
-    <div class="front" style="background: url(card3.png) no-repeat ;background-size: cover;">
+    <div class="front" style="background: url(card3.png) no-repeat ;background-size: 100% auto;">
     </div> 
-    <div class="back" style="background: url(card_back2.png) no-repeat ;background-size: cover;">
+    <div class="back" style="background: url(card_back2.png) no-repeat ;background-size: 100% auto;">
     </div>
   </div>  
-</div>
-<div class="card-container">
   <div class="card card_3">
-    <div class="front" style="background: url(card.png) no-repeat ;background-size: cover;">
+    <div class="front" style="background: url(card.png) no-repeat ;background-size: 100% auto;">
     </div> 
-    <div class="back" style="background: url(card_back2.png) no-repeat ;background-size: cover;">
+    <div class="back" style="background: url(card_back2.png) no-repeat ;background-size: 100% auto;">
     </div>
-  </div>  
+  </div>
+</div>
+
+<!-- 顯示連線錯誤資訊 -->
+<div>
+<div class="system_info">
+Oops!
+We can't find the page you are looking for. 
+<div class="ip_info">127.0.0.1</div>
 </div>
 </div>
 </body>
